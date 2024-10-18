@@ -31,16 +31,18 @@ const isPalindromaStandard = function isPalindromaStandard(s) {
 let choice = prompt("pari o dispari");
 let num = parseInt(prompt("numero da 1 a 5"));
 
-let pcNum = nRandom(5);
+let pcNum = randomIntBetween(1,5);
 
 
 
 
 
-function nRandom(max){
-    const flag = isNum(max);
-    if(flag){
-        const random = Math.floor(Math.random()*max)+1;
+function randomIntBetween(min, max){
+    const flagUno = isNum(max);
+    const flagDue =isNum(min);
+
+    if(flagUno && flagDue){
+        const random = Math.floor(Math.random()*(max-min+1) +min);
         return random
     }else{
         return("non un numero")
