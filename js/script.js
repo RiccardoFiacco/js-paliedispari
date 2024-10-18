@@ -7,5 +7,10 @@ isPalindrome(word);
 
 function isPalindrome(text){
     const textToLow = text.toLowerCase();
-    console.log(textToLow);
+    let counterCatcher;
+    for(let i=0; i<=textToLow.length/2;i++){
+        counterCatcher = textToLow.length - i;
+        
+    }
+    
 }
